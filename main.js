@@ -16,7 +16,7 @@ document.querySelector(".check").addEventListener("click", function () {
   } else if (guess === secretNumber) {
     if (score < 20) {
       document.querySelector(".message").textContent =
-        "you have won the fucking game mah boi🎁";
+        "you have won the fucking game mah boi";
 
       document.querySelector(".header--number").textContent = secretNumber;
 
