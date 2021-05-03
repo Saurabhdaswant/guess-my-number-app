@@ -43,23 +43,6 @@ document.querySelector(".check").addEventListener("click", function () {
     document.querySelector(".score").textContent = score;
   }
 
-  //when player guess is too high
-  //  else if (guess > secretNumber) {
-  //   if (score > 0) {
-  //     document.querySelector(".message").textContent = "📈 too high";
-  //     score--;
-  //     document.querySelector(".score").textContent = score;
-  //   }
-  // }
-  //when player guess is too low
-  //  else if (guess < secretNumber) {
-  //   if (score > 0) {
-  //     document.querySelector(".message").textContent = "📉 too low";
-  //     score--;
-  //     document.querySelector(".score").textContent = score;
-  //   }
-  // }
-
   //when player loss
   if (score === 0) {
     document.querySelector(".message").textContent = "you lost";
