@@ -10,36 +10,28 @@ document.querySelector(".check").addEventListener("click", function () {
   console.log(guess, typeof guess);
 
   if (!guess) {
-    console.log(
-      (document.querySelector(".message").textContent =
-        "plese select a number modafucka 👊🏼 ")
-    );
+    document.querySelector(".message").textContent = "please select number!";
   } else if (guess === secretNumber) {
-    console.log(
-      (document.querySelector(".message").textContent =
-        "saurabh you are legend 👊🏼 ")
-    );
-    score++;
-    document.querySelector(".score").textContent = score;
+    if (score < 20) {
+      document.querySelector(".message").textContent = "fucking correct";
+      score++;
+      document.querySelector(".score").textContent = score;
+    }
   } else if (guess > secretNumber) {
-    if (score > 1) {
-      console.log(
-        (document.querySelector(".message").textContent = "too high 👊🏼 ")
-      );
+    if (score > 0) {
+      document.querySelector(".message").textContent = "too high";
       score--;
       document.querySelector(".score").textContent = score;
-    } else {
-      document.querySelector(".message").textContent = "you lost the game  ";
     }
   } else if (guess < secretNumber) {
-    if (score < 1) {
-      console.log(
-        (document.querySelector(".message").textContent = "too low 👊🏼 ")
-      );
+    if (score > 0) {
+      document.querySelector(".message").textContent = "too low";
       score--;
       document.querySelector(".score").textContent = score;
-    } else {
-      document.querySelector(".message").textContent = "you lost the game  ";
     }
+  }
+
+  if (score === 0) {
+    document.querySelector(".message").textContent = "you lost";
   }
 });
