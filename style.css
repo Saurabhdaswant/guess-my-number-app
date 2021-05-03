@@ -59,8 +59,13 @@ main {
 }
 
 .message,
-.left {
+.left,
+.guess {
   font-size: 1.5rem;
+}
+
+.guess {
+  text-align: center;
 }
 
 .right input {
