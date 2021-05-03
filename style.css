@@ -23,6 +23,7 @@ main {
 }
 
 .btn {
+  cursor: pointer;
   background-color: #00b4d8;
   border: none;
   border-radius: 10px;
