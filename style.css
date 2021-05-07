@@ -82,3 +82,11 @@ main {
   align-items: center;
   display: block;
 }
+
+@media (min-width: 360px) {
+  .between {
+    background-color: #fce7acd5;
+    border-radius: 10px;
+    padding: 0.7rem;
+  }
+}
