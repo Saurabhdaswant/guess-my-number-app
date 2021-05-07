@@ -16,11 +16,11 @@ document.querySelector(".check").addEventListener("click", function () {
 
   //when there is no input
   if (!guess) {
-    displaymessage(" plzz select the number mather faker");
+    displaymessage(" plzz select the number!");
     //when player wins
   } else if (guess === secretNumber) {
     if (score < 20) {
-      displaymessage(" you have won the fucking game mah boi");
+      displaymessage(" you have won the game");
 
       document.querySelector(".header--number").textContent = secretNumber;
 
