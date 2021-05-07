@@ -20,7 +20,7 @@ document.querySelector(".check").addEventListener("click", function () {
     //when player wins
   } else if (guess === secretNumber) {
     if (score < 20) {
-      displaymessage(" you have won the game");
+      displaymessage("you have won the game🎉🎷");
 
       document.querySelector(".header--number").textContent = secretNumber;
 
